@@ -15,9 +15,11 @@ class Kernel extends HttpKernel
 	 */
 	protected $middleware = [
 		\Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
 		\Illuminate\Foundation\Http\Middleware\TrimStrings::class,
 		\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-		\Fideloper\Proxy\TrustProxies::class,
+        \Avem\Http\Middleware\TrustProxies::class,
+		//\Fideloper\Proxy\TrustProxies::class,
 	];
 
 	/**

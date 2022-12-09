@@ -166,7 +166,6 @@ return [
 		/*
 		 * Package Service Providers...
 		 */
- 		Laravel\Tinker\TinkerServiceProvider::class,
 		Fideloper\Proxy\TrustedProxyServiceProvider::class,
 		Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
 		Barryvdh\Debugbar\ServiceProvider::class,
