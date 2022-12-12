@@ -6,7 +6,7 @@ use Auth;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Spatie\MediaLibrary\HasMedia\Interfaces\HasMediaConversions;
+use Spatie\MediaLibrary\HasMedia\HasMedia;
 
 class Exchange extends Model
 {

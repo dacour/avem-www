@@ -5,6 +5,7 @@ namespace Avem\Http\Controllers\Auth;
 use Avem\User;
 use Illuminate\Http\Request;
 use Avem\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -70,7 +71,7 @@ class RegisterController extends Controller
 			'birthday' => $data['birthday'],
 			'email'    => $data['email'],
 			'gender'   => $data['gender'],
-			'password' => bcrypt($data['password']),
+            'password' => Hash::make($data['password']),
 		]);
 	}
 

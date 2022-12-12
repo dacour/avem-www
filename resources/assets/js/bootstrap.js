@@ -1,5 +1,6 @@
 
 window._ = require('lodash');
+window.Popper = require('popper.js').default;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -64,6 +65,7 @@ window.Echo = new Echo({
 	broadcaster: 'pusher',
 	namespace: 'Avem.Events',
 	key: '941a81720962cbec63f3',
-	//     cluster: 'mt1',
-	//     encrypted: true
+//     key: process.env.MIX_PUSHER_APP_KEY,
+//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+//     encrypted: true
 });
